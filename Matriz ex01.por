@@ -3,17 +3,16 @@ programa
 	
 	funcao inicio()
 	{
-		inteiro ano, mes
-		escreva ("Digite o ano: ")
-		leia (ano)
-		escreva ("Digite o mês: ")
-		leia (mes)
-		mensagem(ano, mes)
-	}
-	funcao mensagem(inteiro ano, inteiro mes){
-		escreva("******************\n")
-		escreva("Residência ", ano, " - ", mes, "\n")
-		escreva("******************\n")
+		inteiro contador[10]
+		para (inteiro i = 0; i < 10; i++){
+			escreva ("Digite o ", i+1, "° número: ")
+			leia (contador[i])
+		}
+
+		para (inteiro i = 9; i >= 0; i--){
+			escreva (contador[i], "-")
+		}
+		escreva ("Fim do programa!")
 	}
 }
 /* $$$ Portugol Studio $$$ 
@@ -21,7 +20,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 325; 
+ * @POSICAO-CURSOR = 228; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
